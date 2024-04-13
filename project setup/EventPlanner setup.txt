@@ -1,0 +1,43 @@
+1.install composer  
+    -https://getcomposer.org/download/
+
+2.install xampp with php 7.0.0 version
+   -https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/7.0.0/
+   - set system envirnoment variable  
+       >> select path and click edit set a new path -C:\xampp\php
+
+3. verify composer 
+   -go to new command line
+   -type > composer -v
+
+4.verify php
+   -go to new command line
+   -type > php -v
+   
+5. above all steps are clear please check it.
+
+6.go to xampp file explore 
+  - open htdocs folder
+  - create a new folder > app
+  - open the app folder
+  - open command new command line with app folder
+  
+7. create a new database in php myadmin 
+   - database >> proEventPlanner
+   - import sql file
+   - check tables
+
+7. clone git repo  
+   >> run this command  - git clone https://github.com/tushahirpara11/eventManagementSystem.git
+   >> change name eventManagementSystem to proEventPlanner
+
+8. open app in visual studio code
+   - cd proEventPlanner
+   - app\proEventPlanner\> php artisan storage:link
+   - check env file 
+   - change this variable >> DB_DATABASE = proEventPlanner
+
+9. run your php-laravel app write below commmand
+   - php artisan serve
+   - copy this link >> http://127.0.0.1:8000 
+   - paste your brower
